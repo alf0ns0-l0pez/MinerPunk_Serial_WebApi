@@ -1,0 +1,16 @@
+#pyinstaller
+build/
+dist/
+
+# Python artifact files
+__pycache__/
+venv/
+# Compiled Python bytecode
+*.py[cod]
+
+# Log files
+*.log
+
+
+
+

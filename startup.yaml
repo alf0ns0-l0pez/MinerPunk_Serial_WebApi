@@ -1,0 +1,26 @@
+#Web server setup
+app:
+  ipaddr: 'localhost'
+  port: 9000
+
+#SerialPort
+serialport:
+  timeout : 5
+  baudrate : 115200
+  ports :
+    - 'COM6'
+
+#Logging Setup
+logging_handler:
+  format_template : '[%(name)s]:[%(threadName)s]:[%(asctime)s] --> %(levelname)s [(%(module)s)] **%(funcName)s** <%(lineno)d> = %(message)s'
+  max_bytes : 5000000
+  num_backups : 5
+  path : 'logfile/eventlog.log'
+    
+#Values ​​returned by command
+verify_commands:
+  REL_CLO : 'STA_OUT'
+  REL_OPE : 'STA_OUT'
+  SEN_INP : 'STA_INP'
+  BRD_DES : 'MSG_DES'
+  REL_OUT : 'STA_OUT'
