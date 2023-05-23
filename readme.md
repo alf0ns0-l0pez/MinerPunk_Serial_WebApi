@@ -73,4 +73,4 @@ pip install -r requirements.txt
 * Then import the file **Insomnia.json** to open our **Request Collection**.
 * Now you can test each of our Web Apis.
 #### ***Example Gif***
-![insomnia_example](https://raw.githubusercontent.com/alf0ns0-l0pez/MinerPunk_Serial_WebApi/main/img/insomnia_example.gif.png)
+![insomnia_example](https://raw.githubusercontent.com/alf0ns0-l0pez/MinerPunk_Serial_WebApi/main/img/insomnia_example.gif)
