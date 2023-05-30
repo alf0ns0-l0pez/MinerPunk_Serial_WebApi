@@ -1,22 +1,22 @@
 # MINER PUNK - Serial Web Api
 ![logo](https://raw.githubusercontent.com/alf0ns0-l0pez/MinerPunk_Serial_WebApi/main/img/logo_corn.png)
 ## Introduction
----
-### Serial Web Api is a web service code developed to gave web access to multiples serial ports which are connect to **The MinerPunk Boards** and so through web requests handle peripherals.
+
+Serial Web Api is a web service code developed to gave web access to multiples serial ports which are connect to **The MinerPunk Boards** and so through web requests handle peripherals.
 
 ## Dependencies
----
-### You can take a look in the file **requirements.txt** which is attached in this project to know every library used in this App. 
 
-### To install in a virtual environment in your current project:
+You can take a look in the file **requirements.txt** which is attached in this project to know every library used in this App. 
+
+To install in a virtual environment in your current project:
 ```
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 ```
 ## Setup
----
-### There is a file named startup.yaml where the main settings are located, the following are the most important parameters:
+
+There is a file named startup.yaml where the main settings are located, the following are the most important parameters:
 * Ip Address and Port.
     ```yaml
     #Web server setup
@@ -34,9 +34,9 @@ pip install -r requirements.txt
           - 'COM7' #Board 2
     ```
 ## Usage Example
----
+
 ### **Python Example:**
-### If you wish to test it, there is an example named **example/app_test.py** which makes a request to one of our web apis http://localhost:9000/get_complete and returns the next.
+If you wish to test it, there is an example named **example/app_test.py** which makes a request to one of our web apis http://localhost:9000/get_complete and returns the next.
 ```json
 {
 	"data": {
@@ -68,9 +68,12 @@ pip install -r requirements.txt
 }
 ```
 ### **Using Insomnia:**
-### This Repository counts with a **Request Collection**, using this tool you be able to interact with the Web Apis.
+This Repository counts with a **Request Collection**, using this tool you be able to interact with the Web Apis.
 * First of all, Insomia installed is required, [DOWNLOAD PAGE](https://insomnia.rest/download)
 * Then import the file **Insomnia.json** to open our **Request Collection**.
 * Now you can test each of our Web Apis.
 #### ***Example Gif***
 ![insomnia_example](https://raw.githubusercontent.com/alf0ns0-l0pez/MinerPunk_Serial_WebApi/main/img/insomnia_example.gif)
+
+## Compatible Boards
+1. MinerPunk_RelayMatrix_USB
